@@ -25,10 +25,10 @@ app.post('/genre', (req) => {
 //     console.log(req.file);
 //     res.status(200).send('WOW, Iam up and running an Updated');
 // });
-
+App.start();
 App.mongoConnect()
     .then((data: string) => {
-        App.start();
+        
         console.log(data);
     })
     .catch((err: Error) => console.error(err.message));
